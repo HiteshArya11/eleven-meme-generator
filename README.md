@@ -1,4 +1,4 @@
-# 🖥️ Eleven Meme Generator — Cyberpunk Redesign 🟢⚪🔴
+# 🖥️ Eleven Meme Generator
 
 An interactive, futuristic, high-performance web-based Meme Station styled with a cyberpunk-inspired design system using a **Neon Green, White, and Red** color palette.
 
