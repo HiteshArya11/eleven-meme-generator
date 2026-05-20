@@ -86,8 +86,3 @@ eleven-meme-generator/
 
 ---
 
-## 🤝 Contributions
-
-Feel free to open issues or submit pull requests to expand our cyberpunk preset template collections!
-
-Redesigned with 🔥 by [Antigravity AI Engine](https://github.com/HiteshArya11/eleven-meme-generator)
