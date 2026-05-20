@@ -57,6 +57,14 @@ function setupEventListeners() {
   });
 
   // Manual File Upload
+  uploadZone.addEventListener("click", () => {
+    imageInput.click();
+  });
+
+  imageInput.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+
   imageInput.addEventListener("change", (e) => {
     const file = e.target.files[0];
     if (file) handleFile(file);
