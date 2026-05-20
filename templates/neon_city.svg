@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#020208" />
+      <stop offset="60%" stop-color="#0d0d26" />
+      <stop offset="100%" stop-color="#1c1236" />
+    </linearGradient>
+    <linearGradient id="glow-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(0, 255, 102, 0.4)" />
+      <stop offset="100%" stop-color="rgba(0, 255, 102, 0)" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-grad)" />
+
+  <!-- Stars -->
+  <circle cx="100" cy="80" r="1.5" fill="#fff" opacity="0.8" />
+  <circle cx="250" cy="150" r="1.2" fill="#fff" opacity="0.5" />
+  <circle cx="380" cy="90" r="2" fill="#fff" opacity="0.9" />
+  <circle cx="500" cy="180" r="1.2" fill="#fff" opacity="0.4" />
+  <circle cx="680" cy="110" r="1.5" fill="#fff" opacity="0.7" />
+  <circle cx="750" cy="70" r="2" fill="#fff" opacity="0.6" />
+
+  <!-- Cyber Moon -->
+  <circle cx="650" cy="180" r="60" fill="none" stroke="#ff3131" stroke-width="3" filter="drop-shadow(0 0 15px #ff3131)" />
+  <circle cx="650" cy="180" r="45" fill="none" stroke="#ff3131" stroke-dasharray="10 15" stroke-width="1.5" opacity="0.7" />
+
+  <!-- Back Buildings (Dark Silhouettes) -->
+  <rect x="50" y="320" width="100" height="280" fill="#060613" />
+  <rect x="200" y="260" width="120" height="340" fill="#09091b" />
+  <rect x="420" y="300" width="110" height="300" fill="#080816" />
+  <rect x="600" y="280" width="130" height="320" fill="#070715" />
+
+  <!-- Front Buildings with Neon Outlines -->
+  <!-- Building 1 (Neon Green Outline) -->
+  <rect x="100" y="360" width="120" height="240" fill="#0b0b1f" stroke="#00ff66" stroke-width="2" filter="drop-shadow(0 0 8px rgba(0, 255, 102, 0.4))" />
+  <!-- Windows -->
+  <line x1="130" y1="400" x2="190" y2="400" stroke="#00ff66" stroke-width="2" opacity="0.5" stroke-dasharray="5 8" />
+  <line x1="130" y1="440" x2="190" y2="440" stroke="#00ff66" stroke-width="2" opacity="0.5" stroke-dasharray="5 8" />
+  <line x1="130" y1="480" x2="190" y2="480" stroke="#00ff66" stroke-width="2" opacity="0.5" stroke-dasharray="5 8" />
+  <line x1="130" y1="520" x2="190" y2="520" stroke="#00ff66" stroke-width="2" opacity="0.5" stroke-dasharray="5 8" />
+
+  <!-- Building 2 (Tall, Red Outline) -->
+  <polygon points="300,180 340,220 340,600 260,600 260,220" fill="#0c0d22" stroke="#ff3131" stroke-width="2" filter="drop-shadow(0 0 10px rgba(255, 49, 49, 0.4))" />
+  <!-- Antenna -->
+  <line x1="300" y1="180" x2="300" y2="120" stroke="#ff3131" stroke-width="2" filter="drop-shadow(0 0 5px #ff3131)" />
+  <circle cx="300" cy="115" r="4" fill="#ff3131" filter="drop-shadow(0 0 8px #ff3131)" />
+
+  <!-- Building 3 (Neon Green Outline) -->
+  <rect x="480" y="340" width="140" height="260" fill="#0a0a20" stroke="#00ff66" stroke-width="2" filter="drop-shadow(0 0 8px rgba(0, 255, 102, 0.4))" />
+  <line x1="510" y1="380" x2="590" y2="380" stroke="#00ff66" stroke-width="1.5" opacity="0.6" stroke-dasharray="8 5" />
+  <line x1="510" y1="410" x2="590" y2="410" stroke="#00ff66" stroke-width="1.5" opacity="0.6" stroke-dasharray="8 5" />
+  <line x1="510" y1="440" x2="590" y2="440" stroke="#00ff66" stroke-width="1.5" opacity="0.6" stroke-dasharray="8 5" />
+  <line x1="510" y1="470" x2="590" y2="470" stroke="#00ff66" stroke-width="1.5" opacity="0.6" stroke-dasharray="8 5" />
+  <line x1="510" y1="500" x2="590" y2="500" stroke="#00ff66" stroke-width="1.5" opacity="0.6" stroke-dasharray="8 5" />
+
+  <!-- Cyber Grid Line at the bottom -->
+  <rect x="0" y="585" width="800" height="15" fill="#05050f" />
+  <line x1="0" y1="585" x2="800" y2="585" stroke="#ff3131" stroke-width="3" filter="drop-shadow(0 0 6px #ff3131)" />
+</svg>

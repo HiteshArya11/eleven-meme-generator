@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eleven Meme Generator | Cyber Red, Green & White Redesign</title>
+  <meta name="description" content="Generate high-resolution meme templates instantly with custom colors, outline fonts, and cyberpunk neon green and red design aesthetics. Download premium memes CORS-free!">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cyberpunk Header -->
+  <header>
+    <div class="logo-container">
+      <span class="logo-glow-green"></span>
+      <h1>Eleven Meme Generator</h1>
+      <span class="logo-glow-red"></span>
+    </div>
+    <div class="subtitle">CYBERPUNK <span>MEME STATION</span> // REVOLUTIONARY CREATIVE HUB</div>
+  </header>
+
+  <!-- Interactive Editor Workspace -->
+  <main class="workspace">
+    
+    <!-- Left Column: Controls panel -->
+    <section class="glass-panel" aria-label="Meme Controls">
+      <h2 class="panel-title"><i class="fa-solid fa-sliders"></i> Configuration</h2>
+      
+      <!-- 1. Presets / Template Chooser -->
+      <div class="section">
+        <div class="section-label">
+          <span>1. Select Template</span>
+          <span class="highlight">CORS-FREE</span>
+        </div>
+        <div class="presets-grid" id="presetsGrid">
+          <div class="preset-card active" data-src="templates/cyber_sunset.svg" id="preset1">
+            <img src="templates/cyber_sunset.svg" alt="Cyber Sunset">
+          </div>
+          <div class="preset-card" data-src="templates/neon_city.svg" id="preset2">
+            <img src="templates/neon_city.svg" alt="Neon City">
+          </div>
+          <div class="preset-card" data-src="templates/retro_gamer.svg" id="preset3">
+            <img src="templates/retro_gamer.svg" alt="Retro Gamer">
+          </div>
+          <div class="preset-card" data-src="templates/space_meme.svg" id="preset4">
+            <img src="templates/space_meme.svg" alt="Space Saturn">
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Manual Upload Dropzone -->
+      <div class="section">
+        <div class="section-label">
+          <span>Or Upload Custom Image</span>
+        </div>
+        <div class="uploader-box" id="uploadZone">
+          <div class="uploader-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+          <div class="uploader-text">Drag & drop image or <span>browse files</span></div>
+          <input type="file" id="imageInput" accept="image/*">
+        </div>
+      </div>
+
+      <!-- 3. Top Caption configuration -->
+      <div class="section">
+        <div class="section-label">
+          <span>2. Top Caption</span>
+        </div>
+        <div class="caption-group">
+          <div class="input-glow-wrapper">
+            <input type="text" id="topText" placeholder="Enter top meme caption..." autocomplete="off">
+          </div>
+          <div class="caption-configs">
+            <!-- Font Size -->
+            <div class="range-slider-container">
+              <i class="fa-solid fa-text-height" style="font-size: 0.8rem; opacity: 0.6;"></i>
+              <input type="range" id="topSize" min="20" max="80" value="48" aria-label="Top Text Size">
+              <span id="topSizeVal">48px</span>
+            </div>
+            <!-- Colors & Caps Styling -->
+            <div class="style-pickers">
+              <div class="color-picker-wrapper" title="Fill Color">
+                <input type="color" id="topColor" value="#FFFFFF">
+              </div>
+              <div class="color-picker-wrapper" title="Outline Color">
+                <input type="color" id="topStrokeColor" value="#000000">
+              </div>
+              <button class="toggle-caps active" id="topCapsToggle" title="Force Uppercase">Caps</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Bottom Caption configuration -->
+      <div class="section">
+        <div class="section-label">
+          <span>3. Bottom Caption</span>
+        </div>
+        <div class="caption-group">
+          <div class="input-glow-wrapper">
+            <input type="text" id="bottomText" placeholder="Enter bottom meme caption..." autocomplete="off">
+          </div>
+          <div class="caption-configs">
+            <!-- Font Size -->
+            <div class="range-slider-container">
+              <i class="fa-solid fa-text-height" style="font-size: 0.8rem; opacity: 0.6;"></i>
+              <input type="range" id="bottomSize" min="20" max="80" value="48" aria-label="Bottom Text Size">
+              <span id="bottomSizeVal">48px</span>
+            </div>
+            <!-- Colors & Caps Styling -->
+            <div class="style-pickers">
+              <div class="color-picker-wrapper" title="Fill Color">
+                <input type="color" id="bottomColor" value="#FFFFFF">
+              </div>
+              <div class="color-picker-wrapper" title="Outline Color">
+                <input type="color" id="bottomStrokeColor" value="#000000">
+              </div>
+              <button class="toggle-caps active" id="bottomCapsToggle" title="Force Uppercase">Caps</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Advanced Typography style controls -->
+      <div class="section">
+        <div class="section-label">
+          <span>4. Global Style Customization</span>
+        </div>
+        <div class="font-selector-row">
+          <div>
+            <select id="fontSelector" aria-label="Font Select">
+              <option value="Impact">Impact (Standard Meme)</option>
+              <option value="'Space Grotesk'">Space Grotesk (Cyber)</option>
+              <option value="'Outfit'">Outfit (Premium Minimal)</option>
+              <option value="Arial">Arial Black</option>
+              <option value="Comic Sans MS">Comic Sans (Retro Joke)</option>
+              <option value="Montserrat">Montserrat Bold</option>
+            </select>
+          </div>
+          <div class="range-slider-container" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255,255,255,0.06); padding: 8px 12px; border-radius: 10px;">
+            <input type="range" id="strokeThickness" min="1" max="10" value="5" aria-label="Stroke Thickness" title="Stroke Thickness">
+            <span id="strokeThicknessVal">5px</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action hub button panel -->
+      <div class="action-hub">
+        <button class="btn btn-secondary" id="resetBtn">
+          <i class="fa-solid fa-rotate-left"></i> Reset
+        </button>
+        <button class="btn btn-primary" id="downloadBtn">
+          <i class="fa-solid fa-download"></i> Download PNG
+        </button>
+      </div>
+    </section>
+
+    <!-- Right Column: Live preview container -->
+    <section class="glass-panel preview-panel" aria-label="Live Preview">
+      <h2 class="panel-title"><i class="fa-solid fa-tv"></i> Live Preview Station</h2>
+      
+      <div class="preview-container">
+        <!-- Loading overlay for canvas -->
+        <div class="meme-loading-overlay" id="loadingOverlay" style="display: none;">
+          <div class="spinner"></div>
+          <p>Processing Cyber Canvas...</p>
+        </div>
+        
+        <!-- Live rendered canvas -->
+        <canvas id="memeCanvas" width="800" height="600"></canvas>
+      </div>
+
+      <div class="preview-footer">
+        <span class="neon-indicator-green">LIVE PREVIEW ENGINE</span>
+        <span id="dimensionIndicator"><i class="fa-solid fa-expand"></i> 800 x 600 PX</span>
+        <span><i class="fa-solid fa-shield-halved"></i> SAFE PNG DOWNLOAD</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modern footer -->
+  <footer>
+    <p>Redesigned with 🔥 by <a href="#" target="_blank" rel="noopener">Antigravity AI Engine</a>. Cyberpunk Theme: Neon Green, White & Red.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

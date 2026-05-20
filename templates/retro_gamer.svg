@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="space-grad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#14092b" />
+      <stop offset="50%" stop-color="#0a0518" />
+      <stop offset="100%" stop-color="#020105" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#space-grad)" />
+
+  <!-- Grid backdrop (Subtle dark purple lines) -->
+  <path d="M0,50 L800,50 M0,100 L800,100 M0,150 L800,150 M0,200 L800,200 M0,250 L800,250 M0,300 L800,300 M0,350 L800,350 M0,400 L800,400 M0,450 L800,450 M0,500 L800,500 M0,550 L800,550" stroke="#ff3131" stroke-width="0.5" opacity="0.15" />
+  <path d="M50,0 L50,600 M100,0 L100,600 M150,0 L150,600 M200,0 L200,600 M250,0 L250,600 M300,0 L300,600 M350,0 L350,600 M400,0 L400,600 M450,0 L450,600 M500,0 L500,600 M550,0 L550,600 M600,0 L600,600 M650,0 L650,600 M700,0 L700,600 M750,0 L750,600" stroke="#00ff66" stroke-width="0.5" opacity="0.15" />
+
+  <!-- Ambient light -->
+  <circle cx="400" cy="300" r="220" fill="none" stroke="rgba(0, 255, 102, 0.05)" stroke-width="80" filter="blur(40px)" />
+  <circle cx="400" cy="300" r="180" fill="none" stroke="rgba(255, 49, 49, 0.05)" stroke-width="40" filter="blur(30px)" />
+
+  <!-- Retro Controller Silhouette & Neon outline -->
+  <g transform="translate(180, 160)">
+    <!-- Controller Body -->
+    <path d="M 60,80 
+             C 40,20 120,10 220,10 
+             C 320,10 400,20 380,80
+             C 370,110 390,200 360,240
+             C 330,280 270,250 220,240
+             C 170,250 110,280 80,240
+             C 50,200 70,110 60,80 Z" 
+          fill="#110e20" stroke="#00ff66" stroke-width="5" filter="drop-shadow(0 0 15px rgba(0, 255, 102, 0.8))" />
+
+    <!-- Secondary inner outline for premium styling -->
+    <path d="M 75,85 
+             C 58,35 130,25 220,25 
+             C 310,25 382,35 365,85
+             C 355,115 372,190 345,225
+             C 320,260 270,232 220,225
+             C 170,232 120,260 95,225
+             C 68,190 85,115 75,85 Z" 
+          fill="none" stroke="#ff3131" stroke-width="1.5" opacity="0.7" />
+
+    <!-- D-Pad (Left side) -->
+    <g transform="translate(110, 95)">
+      <!-- Background cross -->
+      <path d="M 20,0 L 40,0 L 40,20 L 60,20 L 60,40 L 40,40 L 40,60 L 20,60 L 20,40 L 0,40 L 0,20 L 20,20 Z" fill="#06050b" stroke="#00ff66" stroke-width="2" />
+      <!-- Dpad accents -->
+      <polygon points="30,5 23,15 37,15" fill="#00ff66" />
+      <polygon points="30,55 23,45 37,45" fill="#00ff66" />
+      <polygon points="5,30 15,23 15,37" fill="#00ff66" />
+      <polygon points="55,30 45,23 45,37" fill="#00ff66" />
+    </g>
+
+    <!-- Action Buttons (Right side - glowing red and white) -->
+    <g transform="translate(260, 95)">
+      <!-- Button X -->
+      <circle cx="30" cy="15" r="14" fill="#06050b" stroke="#ff3131" stroke-width="2" filter="drop-shadow(0 0 4px #ff3131)" />
+      <text x="30" y="20" fill="#ff3131" font-size="14" font-weight="bold" text-anchor="middle" font-family="sans-serif">Y</text>
+
+      <!-- Button A -->
+      <circle cx="30" cy="55" r="14" fill="#06050b" stroke="#ff3131" stroke-width="2" filter="drop-shadow(0 0 4px #ff3131)" />
+      <text x="30" y="60" fill="#ff3131" font-size="14" font-weight="bold" text-anchor="middle" font-family="sans-serif">A</text>
+
+      <!-- Button X -->
+      <circle cx="10" cy="35" r="14" fill="#06050b" stroke="#ff3131" stroke-width="2" filter="drop-shadow(0 0 4px #ff3131)" />
+      <text x="10" y="40" fill="#ff3131" font-size="14" font-weight="bold" text-anchor="middle" font-family="sans-serif">X</text>
+
+      <!-- Button B -->
+      <circle cx="50" cy="35" r="14" fill="#06050b" stroke="#ff3131" stroke-width="2" filter="drop-shadow(0 0 4px #ff3131)" />
+      <text x="50" y="40" fill="#ff3131" font-size="14" font-weight="bold" text-anchor="middle" font-family="sans-serif">B</text>
+    </g>
+
+    <!-- Select / Start buttons in center -->
+    <line x1="180" y1="140" x2="200" y2="130" stroke="#00ff66" stroke-width="3" stroke-linecap="round" filter="drop-shadow(0 0 3px #00ff66)" />
+    <line x1="220" y1="140" x2="240" y2="130" stroke="#00ff66" stroke-width="3" stroke-linecap="round" filter="drop-shadow(0 0 3px #00ff66)" />
+  </g>
+  
+  <!-- "READY PLAYER ONE" neon glowing tag at bottom -->
+  <text x="400" y="480" fill="#fff" font-family="Courier, monospace" font-size="18" font-weight="bold" letter-spacing="4" text-anchor="middle" filter="drop-shadow(0 0 5px #ff3131)">
+    INSERT COIN TO PLAY
+  </text>
+</svg>

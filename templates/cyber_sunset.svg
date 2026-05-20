@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b0813" />
+      <stop offset="40%" stop-color="#1b0a2a" />
+      <stop offset="100%" stop-color="#3d0e3a" />
+    </linearGradient>
+    <linearGradient id="sun" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff007f" />
+      <stop offset="40%" stop-color="#ff5e00" />
+      <stop offset="100%" stop-color="#ffb700" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky background -->
+  <rect width="800" height="600" fill="url(#sky)" />
+  
+  <!-- Glowing Sun -->
+  <circle cx="400" cy="300" r="160" fill="url(#sun)" filter="drop-shadow(0 0 30px rgba(255, 0, 127, 0.5))" />
+  
+  <!-- Sun slices (retro effect) -->
+  <rect x="200" y="270" width="400" height="6" fill="#0b0813" />
+  <rect x="200" y="310" width="400" height="10" fill="#0b0813" />
+  <rect x="200" y="350" width="400" height="14" fill="#0b0813" />
+  <rect x="200" y="390" width="400" height="20" fill="#0b0813" />
+  <rect x="200" y="430" width="400" height="28" fill="#0b0813" />
+  
+  <!-- Grid Horizon / Perspective -->
+  <path d="M 0 420 L 800 420" stroke="#00ff66" stroke-width="4" filter="drop-shadow(0 0 5px #00ff66)" />
+  
+  <!-- Perspective lines -->
+  <path d="M 400 420 L 0 600" stroke="#00ff66" stroke-width="2" />
+  <path d="M 400 420 L 100 600" stroke="#00ff66" stroke-width="2" />
+  <path d="M 400 420 L 220 600" stroke="#00ff66" stroke-width="2" />
+  <path d="M 400 420 L 320 600" stroke="#00ff66" stroke-width="2" />
+  <path d="M 400 420 L 400 600" stroke="#00ff66" stroke-width="2" />
+  <path d="M 400 420 L 480 600" stroke="#00ff66" stroke-width="2" />
+  <path d="M 400 420 L 580 600" stroke="#00ff66" stroke-width="2" />
+  <path d="M 400 420 L 700 600" stroke="#00ff66" stroke-width="2" />
+  <path d="M 400 420 L 800 600" stroke="#00ff66" stroke-width="2" />
+  
+  <!-- Horizontal grid lines -->
+  <path d="M 0 440 L 800 440" stroke="#00ff66" stroke-width="1.5" opacity="0.8" />
+  <path d="M 0 465 L 800 465" stroke="#00ff66" stroke-width="1.5" opacity="0.8" />
+  <path d="M 0 495 L 800 495" stroke="#00ff66" stroke-width="1.5" opacity="0.8" />
+  <path d="M 0 530 L 800 530" stroke="#00ff66" stroke-width="1.5" opacity="0.8" />
+  <path d="M 0 570 L 800 570" stroke="#00ff66" stroke-width="1.5" opacity="0.8" />
+</svg>
