@@ -17,7 +17,9 @@ Create custom high-quality memes instantly with:
 🌐 https://hitesharya11.github.io/eleven-meme-generator/
 
 ---
+# 📸 Preview
 
+![Eleven Meme Generator Preview](https://i.vgy.me/TYQr5s.png)
 # ✨ Features
 
 ## 🎨 Futuristic Cyberpunk Theme
